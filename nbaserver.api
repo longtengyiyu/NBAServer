@@ -6,7 +6,31 @@ type Response {
 	Message string `json:"message"`
 }
 
+type ListResponse {
+   list []ItemResponse `json:"list"`
+}
+
+type ItemResponse {
+	Id int64 `json:"id"`
+	HomeField string `json:"homeField"`
+	HomeFieldSimple string `json:"homeFieldSimple"`
+	AwayField string `json:"awayField"`
+	AwayFieldSimple string `json:"awayFieldSimple"`
+	HomeFieldScores uint `json:"homeFieldScores"`
+	AwayFieldScores uint `json:"awayFieldScores"`
+	Status uint `json:"status"`
+	Started time.Time `json:"startTime"`
+	Created time.Time `json:"createTime"`
+	Updated time.Time `json:"updateTime"`
+}
+
 service nbaserver-api {
 	@handler NbaserverHandler
 	get /from/:name(Request) returns (Response)
+
+    @handler NBAListHandler
+    get /nba/list () returns (ListResponse)
+
+	@handler NBAItemHandler
+	get /nba/itemById () returns (ListResponse)
 }
