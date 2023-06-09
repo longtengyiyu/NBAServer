@@ -3,18 +3,20 @@ package main
 import (
 	"flag"
 	"fmt"
-
-	"nbaserver/internal/config"
-	"nbaserver/internal/handler"
-	"nbaserver/internal/svc"
-
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"
+	"nbaserver/internal/config"
+	"nbaserver/internal/handler"
+	"nbaserver/internal/spider"
+	"nbaserver/internal/svc"
 )
 
 var configFile = flag.String("f", "etc/nbaserver-api.yaml", "the config file")
 
 func main() {
+
+	spider.Start()
+
 	flag.Parse()
 
 	var c config.Config

@@ -4,7 +4,10 @@ go 1.18
 
 require github.com/zeromicro/go-zero v1.5.3
 
+require github.com/andybalholm/cascadia v1.3.1 // indirect
+
 require (
+	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
