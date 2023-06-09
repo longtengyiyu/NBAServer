@@ -15,7 +15,7 @@ var configFile = flag.String("f", "etc/nbaserver-api.yaml", "the config file")
 
 func main() {
 
-	spider.Start()
+	go spider.Start()
 
 	flag.Parse()
 
