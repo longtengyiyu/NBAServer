@@ -1,3 +1,8 @@
 Name: nbaserver-api
 Host: 0.0.0.0
 Port: 8888
+server:
+  https:
+    enable: true
+    certFile: path/cert.pem
+    keyFile: path/key.pem

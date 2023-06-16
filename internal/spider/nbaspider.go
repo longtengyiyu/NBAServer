@@ -19,6 +19,7 @@ type Repose struct {
 	StartTime     string `json:"startTime"`
 	Status        int `json:"status"`
 	GameType      int `json:"gameType"`
+	Period        int `json:"period"`
 }
 
 type Schedule struct {
@@ -172,6 +173,7 @@ func Request(){
 				awayTeamEn := game.AwayTeam.Profile.Abbr
 				awayScore := game.Boxscore.AwayScore
 				status,_ := strconv.Atoi(game.Boxscore.Status)
+				period,_ := strconv.Atoi(game.Boxscore.Period)
 
 				var re Repose
 				re.HomeTeam = homeTeam
@@ -183,6 +185,7 @@ func Request(){
 				re.AwayTeamScore = awayScore
 				re.GameType = gameType
 				re.Status = status
+				re.Period = period;
 				Res = append(Res, re)
 			}
 			break
