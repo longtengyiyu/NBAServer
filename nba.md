@@ -65,124 +65,163 @@ https://m.china.nba.cn/stats2/season/schedule.json?gameDate=2023-06-08&locale=zh
 
 ```
 {
-	"context": {
-		"user": {
-			"countryCode": "CN",
-			"countryName": "China",
-			"locale": "zh_CN",
-			"timeZone": "+08:00",
-			"timeZoneCity": "Australia/Perth"
+    "context": {
+        "user": {
+            "countryCode": "CN",
+            "countryName": "China",
+            "locale": "zh_CN",
+            "timeZone": "+08:00",
+            "timeZoneCity": "Australia/Perth"
+        },
+        "device": {
+            "clazz": null
+        }
+    },
+    "error": {
+        "detail": null,
+        "isError": "false",
+        "message": null
+    },
+    "payload": {
+        "league": {
+            "id": "00",
+            "name": "NBA"
+        },
+        "season": {
+            "isCurrent": "true",
+            "rosterSeasonType": 4,
+            "rosterSeasonYear": "2022",
+            "rosterSeasonYearDisplay": "2022-2023",
+            "scheduleSeasonType": 4,
+            "scheduleSeasonYear": "2022",
+            "scheduleYearDisplay": "2022-2023",
+            "statsSeasonType": 4,
+            "statsSeasonYear": "2022",
+            "statsSeasonYearDisplay": "2022-2023",
+            "year": "2022",
+            "yearDisplay": "2022-2023"
+        },
+        "dates": [
+            {
+                "games": [
+                    {
+                        "profile": {
+                            "arenaLocation": "Denver, CO",
+                            "arenaName": "鲍尔体育馆",
+                            "awayTeamId": "1610612748",
+                            "dateTimeEt": "2023-06-12T20:30",
+                            "gameId": "0042200405",
+                            "homeTeamId": "1610612743",
+                            "number": "5",
+                            "scheduleCode": null,
+                            "seasonType": "4",
+                            "sequence": "1",
+                            "utcMillis": "1686616200000"
+                        },
+                        "boxscore": {
+                            "attendance": "19,537",
+                            "awayScore": 66,
+                            "gameLength": "100",
+                            "homeScore": 64,
+                            "leadChanges": 2,
+                            "officialsDisplayName1": "马克 戴维斯",
+                            "officialsDisplayName2": "埃德 Malloy",
+                            "officialsDisplayName3": "大卫 Guthrie",
+                            "period": "3",
+                            "periodClock": "01:49",
+                            "status": "2",
+                            "statusDesc": "第3节",
+                            "ties": "4"
+                        },
+                        "urls": [
+                            {
+                                "displayText": "联盟通",
+                                "type": "leaguepass",
+                                "value": "https://kbs.sports.qq.com/kbsweb/game.htm?mid=100000:56356206"
+                            }
+                        ],
+                        "broadcasters": [],
+                        "homeTeam": {
+                            "profile": {
+                                "abbr": "DEN",
+                                "city": "丹佛",
+                                "cityEn": "Denver",
+                                "code": "nuggets",
+                                "conference": "Western",
+                                "displayAbbr": "掘金",
+                                "displayConference": "西部",
+                                "division": "西北分区",
+                                "id": "1610612743",
+                                "isAllStarTeam": false,
+                                "isLeagueTeam": true,
+                                "leagueId": "00",
+                                "name": "掘金",
+                                "nameEn": "Nuggets"
+                            },
+                            "matchup": null
+                        },
+                        "awayTeam": {
+                            "profile": {
+                                "abbr": "MIA",
+                                "city": "迈阿密",
+                                "cityEn": "Miami",
+                                "code": "heat",
+                                "conference": "Eastern",
+                                "displayAbbr": "热火",
+                                "displayConference": "东部",
+                                "division": "东南分区",
+                                "id": "1610612748",
+                                "isAllStarTeam": false,
+                                "isLeagueTeam": true,
+                                "leagueId": "00",
+                                "name": "热火",
+                                "nameEn": "Heat"
+                            },
+                            "matchup": null
+                        },
+                        "ifNecessary": false
+                    }
+                ],
+                "gameCount": "1",
+                "utcMillis": "1686585600000"
+            }
+        ],
+        "utcMillis": "1686585600000"
+    },
+    "timestamp": "1686622798798"
+}
+```
+
+新版本api接口数据
+
+```
+{
+	"success": true,
+	"gameCount": 0,
+	"utcMillis": 1686585600000,
+	"list": [{
+			"homeTeamName": "",
+			"homeTeamNameEn": "",
+			"awayTeamName": "",
+			"awayTeamNameEn": "",
+			"homeTeamScore": 0,
+			"awayTeamScore": 0,
+			"status": 1,
+			"startTime": 1686702600000,
+			"gameType": 0 //0常规赛 1季后赛 2半决赛 3决赛
 		},
-		"device": {
-			"clazz": null
+		{
+			"homeTeamName": "",
+			"homeTeamNameEn": "",
+			"awayTeamName": "",
+			"awayTeamNameEn": "",
+			"homeTeamScore": 0,
+			"awayTeamScore": 0,
+			"status": 1,
+			"startTime": 1686702600000,
+			"gameType": 0
 		}
-	},
-	"error": {
-		"detail": null,
-		"isError": "false",
-		"message": null
-	},
-	"payload": {
-		"league": {
-			"id": "00",
-			"name": "NBA"
-		},
-		"season": {
-			"isCurrent": "true",
-			"rosterSeasonType": 4,
-			"rosterSeasonYear": "2022",
-			"rosterSeasonYearDisplay": "2022-2023",
-			"scheduleSeasonType": 4,
-			"scheduleSeasonYear": "2022",
-			"scheduleYearDisplay": "2022-2023",
-			"statsSeasonType": 4,
-			"statsSeasonYear": "2022",
-			"statsSeasonYearDisplay": "2022-2023",
-			"year": "2022",
-			"yearDisplay": "2022-2023"
-		},
-		"dates": [{
-			"games": [{
-				"profile": {
-					"arenaLocation": "Miami, FL",
-					"arenaName": "Kaseya Center",
-					"awayTeamId": "1610612743",
-					"dateTimeEt": "2023-06-07T20:30",
-					"gameId": "0042200403",
-					"homeTeamId": "1610612748",
-					"number": "3",
-					"scheduleCode": null,
-					"seasonType": "4",
-					"sequence": "1",
-					"utcMillis": "1686184200000"
-				},
-				"boxscore": {
-					"attendance": "20,019",
-					"awayScore": 109,
-					"gameLength": "145",
-					"homeScore": 94,
-					"leadChanges": 7,
-					"officialsDisplayName1": "托尼 Brothers",
-					"officialsDisplayName2": "约什 Tiven",
-					"officialsDisplayName3": "凯文 斯科特",
-					"period": "4",
-					"periodClock": "",
-					"status": "3",
-					"statusDesc": "结束",
-					"ties": "7"
-				},
-				"urls": [{
-					"displayText": "联盟通",
-					"type": "leaguepass",
-					"value": "https://kbs.sports.qq.com/kbsweb/game.htm?mid=100000:56356204"
-				}],
-				"broadcasters": [],
-				"homeTeam": {
-					"profile": {
-						"abbr": "MIA",
-						"city": "迈阿密",
-						"cityEn": "Miami",
-						"code": "heat",
-						"conference": "Eastern",
-						"displayAbbr": "热火",
-						"displayConference": "东部",
-						"division": "东南分区",
-						"id": "1610612748",
-						"isAllStarTeam": false,
-						"isLeagueTeam": true,
-						"leagueId": "00",
-						"name": "热火",
-						"nameEn": "Heat"
-					},
-					"matchup": null
-				},
-				"awayTeam": {
-					"profile": {
-						"abbr": "DEN",
-						"city": "丹佛",
-						"cityEn": "Denver",
-						"code": "nuggets",
-						"conference": "Western",
-						"displayAbbr": "掘金",
-						"displayConference": "西部",
-						"division": "西北分区",
-						"id": "1610612743",
-						"isAllStarTeam": false,
-						"isLeagueTeam": true,
-						"leagueId": "00",
-						"name": "掘金",
-						"nameEn": "Nuggets"
-					},
-					"matchup": null
-				},
-				"ifNecessary": false
-			}],
-			"gameCount": "1",
-			"utcMillis": "1686153600000"
-		}],
-		"utcMillis": "1686153600000"
-	},
-	"timestamp": "1686301547346"
+	]
 }
 ```
 
